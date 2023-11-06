@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Open Doers</title>
+  </head>
+  <body>
+    <h1>Open Doers</h1>
+    <nav class="navbar">
+      <span class="menu-toggle" id="menu">Menu</span>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#welcome" class="nav-link">Bienvenid@</a>
+        </li>
+        <li class="nav-item" style="display: none">
+          <a href="#founders" class="nav-link">Fundadores</a>
+        </li>
+        <li class="nav-item">
+          <a href="#members" class="nav-link">Perfil del Miembro</a>
+        </li>
+        <li class="nav-item">
+          <a href="#apply" class="nav-link">Aplicar</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section id="welcome" class="content-section">
+        <h2 class="section-title">Bienvenid@ a Open Doers</h2>
+        <p class="section-desc">
+          Open Doers es una comunidad enérgica y apasionada que se dedica a
+          impulsar el crecimiento de la tecnología y el software en la República
+          Dominicana.
+        </p>
+        <p class="section-desc">
+          Somos un grupo diverso de individuos, desde desarrolladores de
+          software hasta entusiastas de la tecnología y emprendedores, que
+          comparten un objetivo común: transformar nuestro país a través de la
+          innovación tecnológica.
+        </p>
+        <h3 class="subsection-title">Misión</h3>
+        <p>
+          Fomentar el crecimiento de la tecnología y el software en la República
+          Dominicana con un enfoque en la colaboración significativa desde todos
+          los sectores interesados.
+        </p>
+
+        <h3 class="subsection-title">Visión</h3>
+        <p>
+          Construir una comunidad auto-sostenible de personas aprendiendo,
+          enseñando y produciendo proyectos de software y tecnología en la
+          República Dominicana.
+        </p>
+
+        <h3 class="subsection-title">Valores</h3>
+        <ul>
+          <li>Aprendemos haciendo</li>
+          <li>Desafiamos nuestros prejuicios</li>
+          <li>Enfoque a resultados</li>
+          <li>
+            Iteramos hacia un ideal en lugar de esperar por pasos gigantes antes
+            de avanzar
+          </li>
+        </ul>
+      </section>
+
+      <section id="founders" class="content-section" style="display: none">
+        <h2 class="section-title">Fundadores</h2>
+        <ul></ul>
+      </section>
+
+      <section id="members" class="content-section">
+        <h2 class="section-title">Perfil del Miembro de Open Doers</h2>
+        <p>
+          Si te identificas con los siguientes puntos, ¡nuestra comunidad puede
+          ser el lugar perfecto para ti!
+        </p>
+
+        <ul class="feature-list">
+          <li class="feature-item">
+            <strong>Mentalidad Proactiva:</strong> Crees en el poder del
+            aprendizaje a través de la acción. No esperas tener todo el
+            conocimiento para empezar, sino que aprendes mejor haciendo y
+            mejorando constantemente.
+          </li>
+          <li class="feature-item">
+            <strong>Apertura al Cambio:</strong> Reconoces que todos tenemos
+            prejuicios y estás dispuesto a desafiarlos. Valoras diferentes
+            perspectivas y crees en la adaptabilidad y el crecimiento personal.
+          </li>
+          <li class="feature-item">
+            <strong>Orientado a Resultados:</strong> No solo te enfocas en las
+            ideas, sino en cómo llevarlas a la realidad. Buscas crear un impacto
+            real con tus esfuerzos y trabajas para ver resultados tangibles.
+          </li>
+          <li class="feature-item">
+            <strong>Pasos Constantes hacia el Éxito:</strong> Entiendes que el
+            progreso se logra paso a paso. En lugar de esperar a dar pasos
+            gigantes, aprecias la importancia de iterar y mejorar continuamente
+            hacia un objetivo ideal.
+          </li>
+          <li class="feature-item">
+            <strong>Colaborador por Naturaleza:</strong> Te apasiona la idea de
+            colaborar con otros para fomentar el crecimiento de la tecnología en
+            la República Dominicana. Crees que juntos, como comunidad, podemos
+            hacer más y llegar más lejos.
+          </li>
+          <li class="feature-item">
+            <strong>Misión y Visión Alineadas:</strong> Estás alineado con
+            nuestro objetivo de impulsar la tecnología y el software en la
+            República Dominicana y trabajas con nosotros para construir una
+            comunidad auto-sostenible donde las personas aprenden, enseñan y
+            producen proyectos significativos.
+          </li>
+        </ul>
+
+        <p>
+          Si estos puntos resuenan contigo, ¡serías un excelente miembro de
+          nuestra comunidad! Te invitamos a unirte a nosotros en Open Doers y
+          ser parte de nuestro crecimiento colectivo en la República Dominicana.
+        </p>
+      </section>
+
+      <section id="apply" class="content-section">
+        <h2 class="section-title">Aplicar a la Comunidad</h2>
+        <p>
+          Si te sientes listo para ayudarnos a construir un mejor futuro
+          mientras aprendes y enseñas sobre tecnología, completa el siguiente
+          formulario y nos pondremos en contacto contigo.
+        </p>
+        <p>
+          <a
+            href="https://forms.gle/7FHKQnE4zfWqNBXa8"
+            rel="noopener"
+            target="_blank"
+            >Formulario de Aplicación a Open Doers</a
+          >
+        </p>
+      </section>
+    </div>
+
+    <footer>&copy; <em id="date">2023</em> Open Doers</footer>
+
+    <div class="back-to-top" style="display: none">
+      <a href="#menu" class="back-to-top">Volver arriba</a>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navList = document.querySelector('nav ul');
+      const backToTopBtn = document.querySelector('.back-to-top');
+
+      menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+      });
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight / 2) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      });
+
+      const navLinks = document.querySelectorAll('nav ul li a');
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+            navList.classList.remove('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
